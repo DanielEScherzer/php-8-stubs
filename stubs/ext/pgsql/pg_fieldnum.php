@@ -14,24 +14,6 @@ function pg_fieldnum($result, string $field): int
  * @deprecated
  */
 #[\Since('8.1')]
-#[\Until('8.2')]
-function pg_fieldnum(\PgSql\Result $result, string $field): int
-{
-}
-/**
- * @alias pg_field_num
- * @deprecated
- */
-#[\Since('8.2')]
-#[\Until('8.3')]
-function pg_fieldnum(\PgSql\Result $result, string $field): int
-{
-}
-/**
- * @alias pg_field_num
- * @deprecated
- */
-#[\Since('8.3')]
 #[\Until('8.4')]
 function pg_fieldnum(\PgSql\Result $result, string $field): int
 {

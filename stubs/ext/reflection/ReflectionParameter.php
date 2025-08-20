@@ -7,24 +7,6 @@ class ReflectionParameter implements \Reflector
     final private function __clone(): void
     {
     }
-    /** @implementation-alias ReflectionClass::__clone */
-    #[\Since('8.1')]
-    #[\Until('8.2')]
-    private function __clone(): void
-    {
-    }
-    /** @implementation-alias ReflectionClass::__clone */
-    #[\Since('8.2')]
-    #[\Until('8.3')]
-    private function __clone(): void
-    {
-    }
-    /** @implementation-alias ReflectionClass::__clone */
-    #[\Since('8.3')]
-    #[\Until('8.4')]
-    private function __clone(): void
-    {
-    }
     /**
      * @tentative-return-type
      * @return (ReflectionClass | null)
@@ -50,13 +32,7 @@ class ReflectionParameter implements \Reflector
     {
     }
     /** @implementation-alias ReflectionClass::__clone */
-    #[\Since('8.4')]
-    #[\Until('8.5')]
-    private function __clone(): void
-    {
-    }
-    /** @implementation-alias ReflectionClass::__clone */
-    #[\Since('8.5')]
+    #[\Since('8.1')]
     private function __clone(): void
     {
     }

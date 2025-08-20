@@ -4,18 +4,6 @@
 // For now only using @return annotations here.
 interface DateTimeInterface
 {
-    #[\Since('8.2')]
-    #[\Until('8.3')]
-    public function __serialize(): array;
-    #[\Since('8.2')]
-    #[\Until('8.3')]
-    public function __unserialize(array $data): void;
-    #[\Since('8.3')]
-    #[\Until('8.4')]
-    public function __serialize(): array;
-    #[\Since('8.3')]
-    #[\Until('8.4')]
-    public function __unserialize(array $data): void;
     /** @var string */
     #[\Since('8.2')]
     #[\Until('8.4')]
@@ -93,9 +81,6 @@ interface DateTimeInterface
      */
     public function getTimestamp();
     #[\Since('8.4')]
-    #[\Until('8.5')]
-    public function getMicrosecond(): int;
-    #[\Since('8.5')]
     public function getMicrosecond(): int;
     /**
      * @tentative-return-type
@@ -107,15 +92,9 @@ interface DateTimeInterface
      * @return void
      */
     public function __wakeup();
-    #[\Since('8.4')]
-    #[\Until('8.5')]
+    #[\Since('8.2')]
     public function __serialize(): array;
-    #[\Since('8.5')]
-    public function __serialize(): array;
-    #[\Since('8.4')]
-    #[\Until('8.5')]
-    public function __unserialize(array $data): void;
-    #[\Since('8.5')]
+    #[\Since('8.2')]
     public function __unserialize(array $data): void;
     #[\Since('8.4')]
     public const string ATOM = DATE_ATOM;

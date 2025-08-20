@@ -3,22 +3,6 @@
 class mysqli
 {
     /**
-     * @alias mysqli_execute_query
-     */
-    #[\Since('8.2')]
-    #[\Until('8.3')]
-    public function execute_query(string $query, ?array $params = null): mysqli_result|bool
-    {
-    }
-    /**
-     * @alias mysqli_execute_query
-     */
-    #[\Since('8.3')]
-    #[\Until('8.4')]
-    public function execute_query(string $query, ?array $params = null): mysqli_result|bool
-    {
-    }
-    /**
      * @tentative-return-type
      * @alias mysqli_get_client_info
      * @return string
@@ -149,15 +133,7 @@ class mysqli
     /**
      * @alias mysqli_execute_query
      */
-    #[\Since('8.4')]
-    #[\Until('8.5')]
-    public function execute_query(string $query, ?array $params = null): mysqli_result|bool
-    {
-    }
-    /**
-     * @alias mysqli_execute_query
-     */
-    #[\Since('8.5')]
+    #[\Since('8.2')]
     public function execute_query(string $query, ?array $params = null): mysqli_result|bool
     {
     }

@@ -122,11 +122,6 @@ class SplObjectStorage implements \Countable, \Iterator, \Serializable, \ArrayAc
     {
     }
     #[\Since('8.4')]
-    #[\Until('8.5')]
-    public function seek(int $offset): void
-    {
-    }
-    #[\Since('8.5')]
     public function seek(int $offset): void
     {
     }

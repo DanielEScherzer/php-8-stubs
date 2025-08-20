@@ -3,17 +3,6 @@
 /** @generate-function-entries */
 class IntlCalendar
 {
-    // TODO make return type void
-    #[\Since('8.3')]
-    #[\Until('8.4')]
-    public function setDate(int $year, int $month, int $dayOfMonth): void
-    {
-    }
-    #[\Since('8.3')]
-    #[\Until('8.4')]
-    public function setDateTime(int $year, int $month, int $dayOfMonth, int $hour, int $minute, ?int $second = null): void
-    {
-    }
     /**
      * @var int
      * @cvalue UCAL_ERA
@@ -603,21 +592,12 @@ class IntlCalendar
     public function set(int $year, int $month, int $dayOfMonth = UNKNOWN, int $hour = UNKNOWN, int $minute = UNKNOWN, int $second = UNKNOWN)
     {
     }
-    #[\Since('8.4')]
-    #[\Until('8.5')]
+    // TODO make return type void
+    #[\Since('8.3')]
     public function setDate(int $year, int $month, int $dayOfMonth): void
     {
     }
-    #[\Since('8.5')]
-    public function setDate(int $year, int $month, int $dayOfMonth): void
-    {
-    }
-    #[\Since('8.4')]
-    #[\Until('8.5')]
-    public function setDateTime(int $year, int $month, int $dayOfMonth, int $hour, int $minute, ?int $second = null): void
-    {
-    }
-    #[\Since('8.5')]
+    #[\Since('8.3')]
     public function setDateTime(int $year, int $month, int $dayOfMonth, int $hour, int $minute, ?int $second = null): void
     {
     }

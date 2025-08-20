@@ -5,11 +5,6 @@ function xml_set_object(\XMLParser $parser, object $object): bool
 {
 }
 #[\Since('8.2')]
-#[\Until('8.3')]
-function xml_set_object(\XMLParser $parser, object $object): true
-{
-}
-#[\Since('8.3')]
 #[\Until('8.4')]
 function xml_set_object(\XMLParser $parser, object $object): true
 {

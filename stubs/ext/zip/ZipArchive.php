@@ -2,11 +2,6 @@
 
 class ZipArchive
 {
-    #[\Since('8.2')]
-    #[\Until('8.3')]
-    public function clearError(): void
-    {
-    }
     /**
      * @tentative-return-type
      * @return bool
@@ -21,18 +16,6 @@ class ZipArchive
      */
     #[\Until('8.3')]
     public function replaceFile(string $filepath, int $index, int $start = 0, int $length = 0, int $flags = 0)
-    {
-    }
-    /** @return resource|false */
-    #[\Since('8.2')]
-    #[\Until('8.3')]
-    public function getStreamIndex(int $index, int $flags = 0)
-    {
-    }
-    /** @return resource|false */
-    #[\Since('8.2')]
-    #[\Until('8.3')]
-    public function getStreamName(string $name, int $flags = 0)
     {
     }
     /**
@@ -815,45 +798,6 @@ class ZipArchive
     #[\Since('8.2')]
     #[\Until('8.3')]
     public const LIBZIP_VERSION = UNKNOWN;
-    #[\Since('8.3')]
-    #[\Until('8.4')]
-    public function clearError(): void
-    {
-    }
-    /** @tentative-return-type */
-    #[\Since('8.3')]
-    #[\Until('8.4')]
-    public function addFile(string $filepath, string $entryname = "", int $start = 0, int $length = ZipArchive::LENGTH_TO_END, int $flags = ZipArchive::FL_OVERWRITE)
-    {
-    }
-    /** @tentative-return-type */
-    #[\Since('8.3')]
-    #[\Until('8.4')]
-    public function replaceFile(string $filepath, int $index, int $start = 0, int $length = ZipArchive::LENGTH_TO_END, int $flags = 0)
-    {
-    }
-    #[\Since('8.3')]
-    #[\Until('8.4')]
-    public function setArchiveFlag(int $flag, int $value): bool
-    {
-    }
-    #[\Since('8.3')]
-    #[\Until('8.4')]
-    public function getArchiveFlag(int $flag, int $flags = 0): int
-    {
-    }
-    /** @return resource|false */
-    #[\Since('8.3')]
-    #[\Until('8.4')]
-    public function getStreamIndex(int $index, int $flags = 0)
-    {
-    }
-    /** @return resource|false */
-    #[\Since('8.3')]
-    #[\Until('8.4')]
-    public function getStreamName(string $name, int $flags = 0)
-    {
-    }
     /* deprecated in libzip 1.10.0 */
     #ifdef ZIP_FL_RECOMPRESS
     /**
@@ -898,12 +842,7 @@ class ZipArchive
     public function getStatusString()
     {
     }
-    #[\Since('8.4')]
-    #[\Until('8.5')]
-    public function clearError(): void
-    {
-    }
-    #[\Since('8.5')]
+    #[\Since('8.2')]
     public function clearError(): void
     {
     }
@@ -922,24 +861,12 @@ class ZipArchive
     {
     }
     /** @tentative-return-type */
-    #[\Since('8.4')]
-    #[\Until('8.5')]
+    #[\Since('8.3')]
     public function addFile(string $filepath, string $entryname = "", int $start = 0, int $length = ZipArchive::LENGTH_TO_END, int $flags = ZipArchive::FL_OVERWRITE)
     {
     }
     /** @tentative-return-type */
-    #[\Since('8.5')]
-    public function addFile(string $filepath, string $entryname = "", int $start = 0, int $length = ZipArchive::LENGTH_TO_END, int $flags = ZipArchive::FL_OVERWRITE)
-    {
-    }
-    /** @tentative-return-type */
-    #[\Since('8.4')]
-    #[\Until('8.5')]
-    public function replaceFile(string $filepath, int $index, int $start = 0, int $length = ZipArchive::LENGTH_TO_END, int $flags = 0)
-    {
-    }
-    /** @tentative-return-type */
-    #[\Since('8.5')]
+    #[\Since('8.3')]
     public function replaceFile(string $filepath, int $index, int $start = 0, int $length = ZipArchive::LENGTH_TO_END, int $flags = 0)
     {
     }
@@ -985,21 +912,11 @@ class ZipArchive
     public function getArchiveComment(int $flags = 0)
     {
     }
-    #[\Since('8.4')]
-    #[\Until('8.5')]
+    #[\Since('8.3')]
     public function setArchiveFlag(int $flag, int $value): bool
     {
     }
-    #[\Since('8.5')]
-    public function setArchiveFlag(int $flag, int $value): bool
-    {
-    }
-    #[\Since('8.4')]
-    #[\Until('8.5')]
-    public function getArchiveFlag(int $flag, int $flags = 0): int
-    {
-    }
-    #[\Since('8.5')]
+    #[\Since('8.3')]
     public function getArchiveFlag(int $flag, int $flags = 0): int
     {
     }
@@ -1139,24 +1056,12 @@ class ZipArchive
     {
     }
     /** @return resource|false */
-    #[\Since('8.4')]
-    #[\Until('8.5')]
+    #[\Since('8.2')]
     public function getStreamIndex(int $index, int $flags = 0)
     {
     }
     /** @return resource|false */
-    #[\Since('8.5')]
-    public function getStreamIndex(int $index, int $flags = 0)
-    {
-    }
-    /** @return resource|false */
-    #[\Since('8.4')]
-    #[\Until('8.5')]
-    public function getStreamName(string $name, int $flags = 0)
-    {
-    }
-    /** @return resource|false */
-    #[\Since('8.5')]
+    #[\Since('8.2')]
     public function getStreamName(string $name, int $flags = 0)
     {
     }

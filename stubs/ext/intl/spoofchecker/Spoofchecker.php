@@ -154,12 +154,6 @@ class Spoofchecker
     }
     #endif
     #[\Since('8.4')]
-    #[\Until('8.5')]
-    public function setAllowedChars(string $pattern, int $patternOptions = 0): void
-    {
-    }
-    #endif
-    #[\Since('8.5')]
     public function setAllowedChars(string $pattern, int $patternOptions = 0): void
     {
     }

@@ -7,39 +7,6 @@ class ReflectionProperty implements \Reflector
     final private function __clone(): void
     {
     }
-    /** @implementation-alias ReflectionClass::__clone */
-    #[\Since('8.1')]
-    #[\Until('8.2')]
-    private function __clone(): void
-    {
-    }
-    #[\Since('8.1')]
-    #[\Until('8.2')]
-    public function isReadOnly(): bool
-    {
-    }
-    /** @implementation-alias ReflectionClass::__clone */
-    #[\Since('8.2')]
-    #[\Until('8.3')]
-    private function __clone(): void
-    {
-    }
-    #[\Since('8.2')]
-    #[\Until('8.3')]
-    public function isReadOnly(): bool
-    {
-    }
-    /** @implementation-alias ReflectionClass::__clone */
-    #[\Since('8.3')]
-    #[\Until('8.4')]
-    private function __clone(): void
-    {
-    }
-    #[\Since('8.3')]
-    #[\Until('8.4')]
-    public function isReadOnly(): bool
-    {
-    }
     /**
      * @var int
      * @cvalue ZEND_ACC_STATIC
@@ -76,13 +43,7 @@ class ReflectionProperty implements \Reflector
     #[\Until('8.4')]
     public const IS_PRIVATE = UNKNOWN;
     /** @implementation-alias ReflectionClass::__clone */
-    #[\Since('8.4')]
-    #[\Until('8.5')]
-    private function __clone(): void
-    {
-    }
-    /** @implementation-alias ReflectionClass::__clone */
-    #[\Since('8.5')]
+    #[\Since('8.1')]
     private function __clone(): void
     {
     }
@@ -118,47 +79,22 @@ class ReflectionProperty implements \Reflector
     {
     }
     #[\Since('8.4')]
-    #[\Until('8.5')]
-    public function getRawValue(object $object): mixed
-    {
-    }
-    #[\Since('8.5')]
     public function getRawValue(object $object): mixed
     {
     }
     #[\Since('8.4')]
-    #[\Until('8.5')]
-    public function setRawValue(object $object, mixed $value): void
-    {
-    }
-    #[\Since('8.5')]
     public function setRawValue(object $object, mixed $value): void
     {
     }
     #[\Since('8.4')]
-    #[\Until('8.5')]
-    public function setRawValueWithoutLazyInitialization(object $object, mixed $value): void
-    {
-    }
-    #[\Since('8.5')]
     public function setRawValueWithoutLazyInitialization(object $object, mixed $value): void
     {
     }
     #[\Since('8.4')]
-    #[\Until('8.5')]
-    public function skipLazyInitialization(object $object): void
-    {
-    }
-    #[\Since('8.5')]
     public function skipLazyInitialization(object $object): void
     {
     }
     #[\Since('8.4')]
-    #[\Until('8.5')]
-    public function isLazy(object $object): bool
-    {
-    }
-    #[\Since('8.5')]
     public function isLazy(object $object): bool
     {
     }
@@ -191,20 +127,10 @@ class ReflectionProperty implements \Reflector
     {
     }
     #[\Since('8.4')]
-    #[\Until('8.5')]
-    public function isPrivateSet(): bool
-    {
-    }
-    #[\Since('8.5')]
     public function isPrivateSet(): bool
     {
     }
     #[\Since('8.4')]
-    #[\Until('8.5')]
-    public function isProtectedSet(): bool
-    {
-    }
-    #[\Since('8.5')]
     public function isProtectedSet(): bool
     {
     }
@@ -215,12 +141,7 @@ class ReflectionProperty implements \Reflector
     public function isStatic()
     {
     }
-    #[\Since('8.4')]
-    #[\Until('8.5')]
-    public function isReadOnly(): bool
-    {
-    }
-    #[\Since('8.5')]
+    #[\Since('8.1')]
     public function isReadOnly(): bool
     {
     }
@@ -232,29 +153,14 @@ class ReflectionProperty implements \Reflector
     {
     }
     #[\Since('8.4')]
-    #[\Until('8.5')]
-    public function isDynamic(): bool
-    {
-    }
-    #[\Since('8.5')]
     public function isDynamic(): bool
     {
     }
     #[\Since('8.4')]
-    #[\Until('8.5')]
-    public function isAbstract(): bool
-    {
-    }
-    #[\Since('8.5')]
     public function isAbstract(): bool
     {
     }
     #[\Since('8.4')]
-    #[\Until('8.5')]
-    public function isVirtual(): bool
-    {
-    }
-    #[\Since('8.5')]
     public function isVirtual(): bool
     {
     }
@@ -304,11 +210,6 @@ class ReflectionProperty implements \Reflector
     {
     }
     #[\Since('8.4')]
-    #[\Until('8.5')]
-    public function getSettableType(): ?ReflectionType
-    {
-    }
-    #[\Since('8.5')]
     public function getSettableType(): ?ReflectionType
     {
     }
@@ -334,49 +235,23 @@ class ReflectionProperty implements \Reflector
     {
     }
     #[\Since('8.4')]
-    #[\Until('8.5')]
-    public function hasHooks(): bool
-    {
-    }
-    #[\Since('8.5')]
     public function hasHooks(): bool
     {
     }
     /** @return array<string, ReflectionMethod> */
     #[\Since('8.4')]
-    #[\Until('8.5')]
-    public function getHooks(): array
-    {
-    }
-    /** @return array<string, ReflectionMethod> */
-    #[\Since('8.5')]
     public function getHooks(): array
     {
     }
     #[\Since('8.4')]
-    #[\Until('8.5')]
-    public function hasHook(PropertyHookType $type): bool
-    {
-    }
-    #[\Since('8.5')]
     public function hasHook(PropertyHookType $type): bool
     {
     }
     #[\Since('8.4')]
-    #[\Until('8.5')]
-    public function getHook(PropertyHookType $type): ?ReflectionMethod
-    {
-    }
-    #[\Since('8.5')]
     public function getHook(PropertyHookType $type): ?ReflectionMethod
     {
     }
     #[\Since('8.4')]
-    #[\Until('8.5')]
-    public function isFinal(): bool
-    {
-    }
-    #[\Since('8.5')]
     public function isFinal(): bool
     {
     }

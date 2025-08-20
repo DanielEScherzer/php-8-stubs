@@ -2,21 +2,6 @@
 
 class ReflectionAttribute
 {
-    #[\Since('8.1')]
-    #[\Until('8.2')]
-    public function __toString(): string
-    {
-    }
-    #[\Since('8.2')]
-    #[\Until('8.3')]
-    public function __toString(): string
-    {
-    }
-    #[\Since('8.3')]
-    #[\Until('8.4')]
-    public function __toString(): string
-    {
-    }
     /**
      * @var int
      * @cvalue REFLECTION_ATTRIBUTE_IS_INSTANCEOF
@@ -39,12 +24,7 @@ class ReflectionAttribute
     public function newInstance(): object
     {
     }
-    #[\Since('8.4')]
-    #[\Until('8.5')]
-    public function __toString(): string
-    {
-    }
-    #[\Since('8.5')]
+    #[\Since('8.1')]
     public function __toString(): string
     {
     }

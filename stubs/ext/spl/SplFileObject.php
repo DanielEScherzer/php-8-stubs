@@ -11,24 +11,6 @@ class SplFileObject extends \SplFileInfo implements \RecursiveIterator, \Seekabl
     public function fputcsv(array $fields, string $separator = ",", string $enclosure = "\"", string $escape = "\\")
     {
     }
-    /** @tentative-return-type */
-    #[\Since('8.1')]
-    #[\Until('8.2')]
-    public function fputcsv(array $fields, string $separator = ",", string $enclosure = "\"", string $escape = "\\", string $eol = "\n")
-    {
-    }
-    /** @tentative-return-type */
-    #[\Since('8.2')]
-    #[\Until('8.3')]
-    public function fputcsv(array $fields, string $separator = ",", string $enclosure = "\"", string $escape = "\\", string $eol = "\n")
-    {
-    }
-    /** @tentative-return-type */
-    #[\Since('8.3')]
-    #[\Until('8.4')]
-    public function fputcsv(array $fields, string $separator = ",", string $enclosure = "\"", string $escape = "\\", string $eol = "\n")
-    {
-    }
     /**
      * @var int
      * @cvalue SPL_FILE_OBJECT_DROP_NEW_LINE
@@ -104,13 +86,7 @@ class SplFileObject extends \SplFileInfo implements \RecursiveIterator, \Seekabl
     {
     }
     /** @tentative-return-type */
-    #[\Since('8.4')]
-    #[\Until('8.5')]
-    public function fputcsv(array $fields, string $separator = ",", string $enclosure = "\"", string $escape = "\\", string $eol = "\n")
-    {
-    }
-    /** @tentative-return-type */
-    #[\Since('8.5')]
+    #[\Since('8.1')]
     public function fputcsv(array $fields, string $separator = ",", string $enclosure = "\"", string $escape = "\\", string $eol = "\n")
     {
     }

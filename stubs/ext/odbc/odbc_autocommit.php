@@ -12,11 +12,6 @@ function odbc_autocommit($odbc, ?bool $enable = null): int|bool
 {
 }
 #[\Since('8.4')]
-#[\Until('8.5')]
-function odbc_autocommit(\Odbc\Connection $odbc, ?bool $enable = null): int|bool
-{
-}
-#[\Since('8.5')]
 function odbc_autocommit(\Odbc\Connection $odbc, ?bool $enable = null): int|bool
 {
 }

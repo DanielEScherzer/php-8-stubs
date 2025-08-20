@@ -78,11 +78,6 @@ final class ReflectionGenerator
     {
     }
     #[\Since('8.4')]
-    #[\Until('8.5')]
-    public function isClosed(): bool
-    {
-    }
-    #[\Since('8.5')]
     public function isClosed(): bool
     {
     }

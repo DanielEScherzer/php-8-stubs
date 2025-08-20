@@ -7,21 +7,6 @@ class PDO
     public function setAttribute(int $attribute, mixed $value)
     {
     }
-    #[\Since('8.1')]
-    #[\Until('8.2')]
-    public function setAttribute(int $attribute, mixed $value): bool
-    {
-    }
-    #[\Since('8.2')]
-    #[\Until('8.3')]
-    public function setAttribute(int $attribute, mixed $value): bool
-    {
-    }
-    #[\Since('8.3')]
-    #[\Until('8.4')]
-    public function setAttribute(int $attribute, mixed $value): bool
-    {
-    }
     /**
      * @var int
      * @cvalue LONG_CONST(PDO_PARAM_NULL)
@@ -544,11 +529,6 @@ class PDO
     {
     }
     #[\Since('8.4')]
-    #[\Until('8.5')]
-    public static function connect(string $dsn, ?string $username = null, #[\SensitiveParameter] ?string $password = null, ?array $options = null): static
-    {
-    }
-    #[\Since('8.5')]
     public static function connect(string $dsn, ?string $username = null, #[\SensitiveParameter] ?string $password = null, ?array $options = null): static
     {
     }
@@ -643,12 +623,7 @@ class PDO
     public function rollBack()
     {
     }
-    #[\Since('8.4')]
-    #[\Until('8.5')]
-    public function setAttribute(int $attribute, mixed $value): bool
-    {
-    }
-    #[\Since('8.5')]
+    #[\Since('8.1')]
     public function setAttribute(int $attribute, mixed $value): bool
     {
     }

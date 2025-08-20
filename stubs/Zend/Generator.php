@@ -28,11 +28,6 @@ final class Generator implements \Iterator
     {
     }
     #[\Since('8.4')]
-    #[\Until('8.5')]
-    public function __debugInfo(): array
-    {
-    }
-    #[\Since('8.5')]
     public function __debugInfo(): array
     {
     }

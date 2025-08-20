@@ -2,16 +2,6 @@
 
 class ReflectionFunction extends \ReflectionFunctionAbstract
 {
-    #[\Since('8.2')]
-    #[\Until('8.3')]
-    public function isAnonymous(): bool
-    {
-    }
-    #[\Since('8.3')]
-    #[\Until('8.4')]
-    public function isAnonymous(): bool
-    {
-    }
     /**
      * @tentative-return-type
      * @return bool
@@ -33,12 +23,7 @@ class ReflectionFunction extends \ReflectionFunctionAbstract
     public function __toString(): string
     {
     }
-    #[\Since('8.4')]
-    #[\Until('8.5')]
-    public function isAnonymous(): bool
-    {
-    }
-    #[\Since('8.5')]
+    #[\Since('8.2')]
     public function isAnonymous(): bool
     {
     }

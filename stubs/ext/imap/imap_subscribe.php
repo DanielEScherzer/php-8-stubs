@@ -6,16 +6,6 @@ function imap_subscribe($imap, string $mailbox): bool
 {
 }
 #[\Since('8.1')]
-#[\Until('8.2')]
-function imap_subscribe(\IMAP\Connection $imap, string $mailbox): bool
-{
-}
-#[\Since('8.2')]
-#[\Until('8.3')]
-function imap_subscribe(\IMAP\Connection $imap, string $mailbox): bool
-{
-}
-#[\Since('8.3')]
 function imap_subscribe(\IMAP\Connection $imap, string $mailbox): bool
 {
 }

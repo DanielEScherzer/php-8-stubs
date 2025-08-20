@@ -2,24 +2,6 @@
 
 class mysqli_result implements \IteratorAggregate
 {
-    /** @alias mysqli_fetch_column */
-    #[\Since('8.1')]
-    #[\Until('8.2')]
-    public function fetch_column(int $column = 0): null|int|float|string|false
-    {
-    }
-    /** @alias mysqli_fetch_column */
-    #[\Since('8.2')]
-    #[\Until('8.3')]
-    public function fetch_column(int $column = 0): null|int|float|string|false
-    {
-    }
-    /** @alias mysqli_fetch_column */
-    #[\Since('8.3')]
-    #[\Until('8.4')]
-    public function fetch_column(int $column = 0): null|int|float|string|false
-    {
-    }
     public function __construct(mysqli $mysql, int $result_mode = MYSQLI_STORE_RESULT)
     {
     }
@@ -109,13 +91,7 @@ class mysqli_result implements \IteratorAggregate
     {
     }
     /** @alias mysqli_fetch_column */
-    #[\Since('8.4')]
-    #[\Until('8.5')]
-    public function fetch_column(int $column = 0): null|int|float|string|false
-    {
-    }
-    /** @alias mysqli_fetch_column */
-    #[\Since('8.5')]
+    #[\Since('8.1')]
     public function fetch_column(int $column = 0): null|int|float|string|false
     {
     }

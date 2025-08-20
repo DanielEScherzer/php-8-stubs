@@ -14,24 +14,6 @@ function pg_freeresult($result): bool
  * @deprecated
  */
 #[\Since('8.1')]
-#[\Until('8.2')]
-function pg_freeresult(\PgSql\Result $result): bool
-{
-}
-/**
- * @alias pg_free_result
- * @deprecated
- */
-#[\Since('8.2')]
-#[\Until('8.3')]
-function pg_freeresult(\PgSql\Result $result): bool
-{
-}
-/**
- * @alias pg_free_result
- * @deprecated
- */
-#[\Since('8.3')]
 #[\Until('8.4')]
 function pg_freeresult(\PgSql\Result $result): bool
 {

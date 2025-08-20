@@ -322,15 +322,6 @@ class PharData extends \RecursiveDirectoryIterator implements \Countable, \Array
      * @implementation-alias Phar::setStub
      */
     #[\Since('8.4')]
-    #[\Until('8.5')]
-    public function setStub($stub, int $length = UNKNOWN): true
-    {
-    }
-    /**
-     * @param resource|string $stub
-     * @implementation-alias Phar::setStub
-     */
-    #[\Since('8.5')]
     public function setStub($stub, int $length = UNKNOWN): true
     {
     }
@@ -404,12 +395,6 @@ class PharData extends \RecursiveDirectoryIterator implements \Countable, \Array
     }
     /** @implementation-alias Phar::unlinkArchive */
     #[\Since('8.4')]
-    #[\Until('8.5')]
-    final public static function unlinkArchive(string $filename): true
-    {
-    }
-    /** @implementation-alias Phar::unlinkArchive */
-    #[\Since('8.5')]
     final public static function unlinkArchive(string $filename): true
     {
     }

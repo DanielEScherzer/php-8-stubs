@@ -11,33 +11,6 @@ class mysqli_stmt
     public function execute()
     {
     }
-    /**
-     * @tentative-return-type
-     * @alias mysqli_stmt_execute
-     */
-    #[\Since('8.1')]
-    #[\Until('8.2')]
-    public function execute(?array $params = null)
-    {
-    }
-    /**
-     * @tentative-return-type
-     * @alias mysqli_stmt_execute
-     */
-    #[\Since('8.2')]
-    #[\Until('8.3')]
-    public function execute(?array $params = null)
-    {
-    }
-    /**
-     * @tentative-return-type
-     * @alias mysqli_stmt_execute
-     */
-    #[\Since('8.3')]
-    #[\Until('8.4')]
-    public function execute(?array $params = null)
-    {
-    }
     public function __construct(mysqli $mysql, ?string $query = null)
     {
     }
@@ -93,16 +66,7 @@ class mysqli_stmt
      * @tentative-return-type
      * @alias mysqli_stmt_execute
      */
-    #[\Since('8.4')]
-    #[\Until('8.5')]
-    public function execute(?array $params = null)
-    {
-    }
-    /**
-     * @tentative-return-type
-     * @alias mysqli_stmt_execute
-     */
-    #[\Since('8.5')]
+    #[\Since('8.1')]
     public function execute(?array $params = null)
     {
     }

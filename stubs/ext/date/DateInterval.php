@@ -2,18 +2,6 @@
 
 class DateInterval
 {
-    #[\Since('8.2')]
-    #[\Until('8.3')]
-    public function __serialize(): array;
-    #[\Since('8.2')]
-    #[\Until('8.3')]
-    public function __unserialize(array $data): void;
-    #[\Since('8.3')]
-    #[\Until('8.4')]
-    public function __serialize(): array;
-    #[\Since('8.3')]
-    #[\Until('8.4')]
-    public function __unserialize(array $data): void;
     public function __construct(string $duration)
     {
     }
@@ -32,15 +20,9 @@ class DateInterval
     public function format(string $format)
     {
     }
-    #[\Since('8.4')]
-    #[\Until('8.5')]
+    #[\Since('8.2')]
     public function __serialize(): array;
-    #[\Since('8.5')]
-    public function __serialize(): array;
-    #[\Since('8.4')]
-    #[\Until('8.5')]
-    public function __unserialize(array $data): void;
-    #[\Since('8.5')]
+    #[\Since('8.2')]
     public function __unserialize(array $data): void;
     /**
      * @tentative-return-type

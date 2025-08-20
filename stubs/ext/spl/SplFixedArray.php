@@ -3,47 +3,12 @@
 /** @generate-function-entries */
 class SplFixedArray implements \IteratorAggregate, \ArrayAccess, \Countable
 {
-    #[\Since('8.1')]
-    #[\Until('8.2')]
-    public function jsonSerialize(): array
-    {
-    }
-    #[\Since('8.2')]
-    #[\Until('8.3')]
-    public function __serialize(): array
-    {
-    }
-    #[\Since('8.2')]
-    #[\Until('8.3')]
-    public function __unserialize(array $data): void
-    {
-    }
-    #[\Since('8.2')]
-    #[\Until('8.3')]
-    public function jsonSerialize(): array
-    {
-    }
     /**
      * @tentative-return-type
      * @return void
      */
     #[\Until('8.4')]
     public function __wakeup()
-    {
-    }
-    #[\Since('8.3')]
-    #[\Until('8.4')]
-    public function __serialize(): array
-    {
-    }
-    #[\Since('8.3')]
-    #[\Until('8.4')]
-    public function __unserialize(array $data): void
-    {
-    }
-    #[\Since('8.3')]
-    #[\Until('8.4')]
-    public function jsonSerialize(): array
     {
     }
     public function __construct(int $size = 0)
@@ -62,21 +27,11 @@ class SplFixedArray implements \IteratorAggregate, \ArrayAccess, \Countable
     public function __wakeup()
     {
     }
-    #[\Since('8.4')]
-    #[\Until('8.5')]
+    #[\Since('8.2')]
     public function __serialize(): array
     {
     }
-    #[\Since('8.5')]
-    public function __serialize(): array
-    {
-    }
-    #[\Since('8.4')]
-    #[\Until('8.5')]
-    public function __unserialize(array $data): void
-    {
-    }
-    #[\Since('8.5')]
+    #[\Since('8.2')]
     public function __unserialize(array $data): void
     {
     }
@@ -150,15 +105,7 @@ class SplFixedArray implements \IteratorAggregate, \ArrayAccess, \Countable
     public function getIterator(): Iterator
     {
     }
-    #[\Since('8.4')]
-    #[\Until('8.5')]
-    public function jsonSerialize(): array
-    {
-    }
-    /**
-     * @implementation-alias SplFixedArray::toArray
-     */
-    #[\Since('8.5')]
+    #[\Since('8.1')]
     public function jsonSerialize(): array
     {
     }

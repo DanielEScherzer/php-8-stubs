@@ -270,23 +270,11 @@ class XMLReader
     }
     // TODO Return type shouldn't be dependent on the call scope
     #[\Since('8.4')]
-    #[\Until('8.5')]
-    public static function fromUri(string $uri, ?string $encoding = null, int $flags = 0): static
-    {
-    }
-    // TODO Return type shouldn't be dependent on the call scope
-    #[\Since('8.5')]
     public static function fromUri(string $uri, ?string $encoding = null, int $flags = 0): static
     {
     }
     /** @param resource $stream */
     #[\Since('8.4')]
-    #[\Until('8.5')]
-    public static function fromStream($stream, ?string $encoding = null, int $flags = 0, ?string $documentUri = null): static
-    {
-    }
-    /** @param resource $stream */
-    #[\Since('8.5')]
     public static function fromStream($stream, ?string $encoding = null, int $flags = 0, ?string $documentUri = null): static
     {
     }
@@ -345,12 +333,6 @@ class XMLReader
     }
     // TODO Return type shouldn't be dependent on the call scope
     #[\Since('8.4')]
-    #[\Until('8.5')]
-    public static function fromString(string $source, ?string $encoding = null, int $flags = 0): static
-    {
-    }
-    // TODO Return type shouldn't be dependent on the call scope
-    #[\Since('8.5')]
     public static function fromString(string $source, ?string $encoding = null, int $flags = 0): static
     {
     }

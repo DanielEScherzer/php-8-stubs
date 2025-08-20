@@ -14,24 +14,6 @@ function pg_lowrite($lob, string $data, ?int $length = null): int|false
  * @deprecated
  */
 #[\Since('8.1')]
-#[\Until('8.2')]
-function pg_lowrite(\PgSql\Lob $lob, string $data, ?int $length = null): int|false
-{
-}
-/**
- * @alias pg_lo_write
- * @deprecated
- */
-#[\Since('8.2')]
-#[\Until('8.3')]
-function pg_lowrite(\PgSql\Lob $lob, string $data, ?int $length = null): int|false
-{
-}
-/**
- * @alias pg_lo_write
- * @deprecated
- */
-#[\Since('8.3')]
 #[\Until('8.4')]
 function pg_lowrite(\PgSql\Lob $lob, string $data, ?int $length = null): int|false
 {

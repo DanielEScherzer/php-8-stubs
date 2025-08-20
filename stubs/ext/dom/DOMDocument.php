@@ -2,12 +2,6 @@
 
 class DOMDocument extends \DOMNode implements \DOMParentNode
 {
-    /** @param DOMNode|string $nodes */
-    #[\Since('8.3')]
-    #[\Until('8.4')]
-    public function replaceChildren(...$nodes): void
-    {
-    }
     public function __construct(string $version = "1.0", string $encoding = "")
     {
     }
@@ -219,13 +213,7 @@ class DOMDocument extends \DOMNode implements \DOMParentNode
     {
     }
     /** @param DOMNode|string $nodes */
-    #[\Since('8.4')]
-    #[\Until('8.5')]
-    public function replaceChildren(...$nodes): void
-    {
-    }
-    /** @param DOMNode|string $nodes */
-    #[\Since('8.5')]
+    #[\Since('8.3')]
     public function replaceChildren(...$nodes): void
     {
     }

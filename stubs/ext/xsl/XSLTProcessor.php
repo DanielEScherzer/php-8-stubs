@@ -71,11 +71,6 @@ class XSLTProcessor
     {
     }
     #[\Since('8.4')]
-    #[\Until('8.5')]
-    public function registerPHPFunctionNS(string $namespaceURI, string $name, callable $callable): void
-    {
-    }
-    #[\Since('8.5')]
     public function registerPHPFunctionNS(string $namespaceURI, string $name, callable $callable): void
     {
     }

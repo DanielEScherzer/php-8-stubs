@@ -12,18 +12,6 @@ class PDO_PGSql_Ext
     public function pgsqlGetNotify(int $fetchMode = PDO::FETCH_USE_DEFAULT, int $timeoutMilliseconds = 0)
     {
     }
-    /** @tentative-return-type */
-    #[\Since('8.2')]
-    #[\Until('8.3')]
-    public function pgsqlGetNotify(int $fetchMode = PDO::FETCH_DEFAULT, int $timeoutMilliseconds = 0)
-    {
-    }
-    /** @tentative-return-type */
-    #[\Since('8.3')]
-    #[\Until('8.4')]
-    public function pgsqlGetNotify(int $fetchMode = PDO::FETCH_DEFAULT, int $timeoutMilliseconds = 0)
-    {
-    }
     /**
      * @tentative-return-type
      * @return bool
@@ -77,13 +65,7 @@ class PDO_PGSql_Ext
     {
     }
     /** @tentative-return-type */
-    #[\Since('8.4')]
-    #[\Until('8.5')]
-    public function pgsqlGetNotify(int $fetchMode = PDO::FETCH_DEFAULT, int $timeoutMilliseconds = 0)
-    {
-    }
-    /** @tentative-return-type */
-    #[\Since('8.5')]
+    #[\Since('8.2')]
     public function pgsqlGetNotify(int $fetchMode = PDO::FETCH_DEFAULT, int $timeoutMilliseconds = 0)
     {
     }

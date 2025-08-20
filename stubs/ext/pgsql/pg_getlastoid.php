@@ -14,24 +14,6 @@ function pg_getlastoid($result): string|int|false
  * @deprecated
  */
 #[\Since('8.1')]
-#[\Until('8.2')]
-function pg_getlastoid(\PgSql\Result $result): string|int|false
-{
-}
-/**
- * @alias pg_last_oid
- * @deprecated
- */
-#[\Since('8.2')]
-#[\Until('8.3')]
-function pg_getlastoid(\PgSql\Result $result): string|int|false
-{
-}
-/**
- * @alias pg_last_oid
- * @deprecated
- */
-#[\Since('8.3')]
 #[\Until('8.4')]
 function pg_getlastoid(\PgSql\Result $result): string|int|false
 {
