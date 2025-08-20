@@ -567,6 +567,9 @@ $command = new class(
 				if ($oldAttrib->name->name !== $newAttrib->name->name) {
 					return $this->stmtDiff($old, $new, $updateTo);
 				}
+				if ($oldAttrib->name->name === 'Since' || $oldAttrib->name->name === 'Until') {
+					continue;
+				}
 				$oldArgs = $oldAttrib->args;
 				$newArgs = $newAttrib->args;
 				if (count($oldArgs) !== count($newArgs)) {
@@ -577,9 +580,6 @@ $command = new class(
 					if ($oldArg->name !== null && $newArg->name !== null) {
 						if ($oldArg->name->name !== $newArg->name->name) {
 							return $this->stmtDiff($old, $new, $updateTo);
-						}
-						if ($oldArg->name->name === 'Since' || $oldArg->name->name === 'Until') {
-							continue;
 						}
 					} elseif ($oldArg->name !== null || $newArg->name !== null) {
 						return $this->stmtDiff($old, $new, $updateTo);
