@@ -20,7 +20,6 @@ jobs:
         with:
           ref: ${{ github.head_ref }}
           fetch-depth: '0'
-          token: ${{ secrets.PHPSTAN_BOT_TOKEN }}
       - name: "Install PHP"
         uses: "shivammathur/setup-php@v2"
         with:
