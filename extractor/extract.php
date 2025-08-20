@@ -552,43 +552,49 @@ $command = new class(
 			return $this->stmtDiff($old, $new, $updateTo);
 		}
 		$oldAttribGroups = $old->getAttrGroups();
+		$oldAttribs = [];
+		foreach ($oldAttribGroups as $group) {
+			foreach ($group->attrs as $attrib) {
+				if ($attrib->name->name !== 'Since' && $attrib->name->name !== 'Until') {
+					$oldAttribs[] = $attrib;
+				}
+			}
+		}
 		$newAttribGroups = $new->getAttrGroups();
-		if (count($oldAttribGroups) !== count($newAttribGroups)) {
+		$newAttribs = [];
+		foreach ($newAttribGroups as $group) {
+			foreach ($group->attrs as $attrib) {
+				if ($attrib->name->name !== 'Since' && $attrib->name->name !== 'Until') {
+					$oldAttribs[] = $attrib;
+				}
+			}
+		}
+		if (count($oldAttribs) !== count($newAttribs)) {
 			return $this->stmtDiff($old, $new, $updateTo);
 		}
-		foreach ($oldAttribGroups as $groupN => $oldGroup) {
-			$oldAttribs = $oldGroup->attrs;
-			$newAttribs = $newAttribGroups[$groupN]->attrs;
-			if (count($oldAttribs) !== count($newAttribs)) {
+		foreach ($oldAttribs as $idx => $oldAttrib) {
+			$newAttrib = $newAttribs[$attribIdx];
+			if ($oldAttrib->name->name !== $newAttrib->name->name) {
 				return $this->stmtDiff($old, $new, $updateTo);
 			}
-			foreach ($oldAttribs as $attribIdx => $oldAttrib) {
-				$newAttrib = $newAttribs[$attribIdx];
-				if ($oldAttrib->name->name !== $newAttrib->name->name) {
-					return $this->stmtDiff($old, $new, $updateTo);
-				}
-				if ($oldAttrib->name->name === 'Since' || $oldAttrib->name->name === 'Until') {
-					continue;
-				}
-				$oldArgs = $oldAttrib->args;
-				$newArgs = $newAttrib->args;
-				if (count($oldArgs) !== count($newArgs)) {
-					return $this->stmtDiff($old, $new, $updateTo);
-				}
-				foreach ($oldArgs as $argIdx => $oldArg) {
-					$newArg = $newArgs[$argIdx];
-					if ($oldArg->name !== null && $newArg->name !== null) {
-						if ($oldArg->name->name !== $newArg->name->name) {
-							return $this->stmtDiff($old, $new, $updateTo);
-						}
-					} elseif ($oldArg->name !== null || $newArg->name !== null) {
+			$oldArgs = $oldAttrib->args;
+			$newArgs = $newAttrib->args;
+			if (count($oldArgs) !== count($newArgs)) {
+				return $this->stmtDiff($old, $new, $updateTo);
+			}
+			foreach ($oldArgs as $argIdx => $oldArg) {
+				$newArg = $newArgs[$argIdx];
+				if ($oldArg->name !== null && $newArg->name !== null) {
+					if ($oldArg->name->name !== $newArg->name->name) {
 						return $this->stmtDiff($old, $new, $updateTo);
 					}
-					$oldArgValue = $this->printer->prettyPrintExpr($oldArg->expr);
-					$newArgValue = $this->printer->prettyPrintExpr($newArg->expr);
-					if ($oldArgValue !== $newArgValue) {
-						return $this->stmtDiff($old, $new, $updateTo);
-					}
+				} elseif ($oldArg->name !== null || $newArg->name !== null) {
+					return $this->stmtDiff($old, $new, $updateTo);
+				}
+				$oldArgValue = $this->printer->prettyPrintExpr($oldArg->expr);
+				$newArgValue = $this->printer->prettyPrintExpr($newArg->expr);
+				if ($oldArgValue !== $newArgValue) {
+					return $this->stmtDiff($old, $new, $updateTo);
 				}
 			}
 		}
